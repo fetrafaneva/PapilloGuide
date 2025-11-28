@@ -23,6 +23,16 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import img1 from "./papillo1.jpg";
+import img2 from "./papillo2.jpg";
+import img3 from "./papillo3.jpg";
+import img4 from "./papillo4.jpg";
+import img5 from "./papillo5.jpg";
+import img6 from "./papillo6.jpg";
+import img7 from "./papillo7.jpg";
+import img8 from "./papillo8.jpg";
+import img9 from "./papillo9.jpg";
+import img10 from "./papillo10.jpg";
 
 export {
   airbnb,
@@ -50,4 +60,14 @@ export {
   people01,
   people02,
   people03,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
 };

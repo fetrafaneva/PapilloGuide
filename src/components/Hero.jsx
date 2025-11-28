@@ -3,7 +3,10 @@ import { discount, robot } from "../assets";
 
 const Hero = () => {
   return (
-    <section id="home" className={`flex md:flex-row flex-col sm:py py-6`}>
+    <section
+      id="home"
+      className={`flex md:flex-row flex-col ${styles.paddingY}`}
+    >
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >

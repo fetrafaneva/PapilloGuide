@@ -1,32 +1,63 @@
-import { apple, bill, google } from "../assets";
-import styles, { layout } from "../style";
+import React, { useEffect, useState } from "react";
+import {
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+} from "../assets";
 
-const Billing = () => (
-  <section id="product" className={layout.sectionReverse}>
-    <div className={layout.sectionImgReverse}>
-      <img
-        src={bill}
-        alt="billing"
-        className="w-[100%] h-[100%] relative z-[5]"
-      />
+const Billing = () => {
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+  const [startIndex, setStartIndex] = useState(0);
 
-      {/* gradient start */}
-      <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
-      <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
-      {/* gradient end */}
-    </div>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStartIndex((prev) => (prev + 5) % images.length);
+    }, 3000); // toutes les 3 secondes (réglable)
 
-    <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        Apprenez à reconnaître <br className="sm:block hidden" /> les papillons
-        autour de vous.
-      </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean
-        neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.
-      </p>
-    </div>
-  </section>
-);
+    return () => clearInterval(interval);
+  }, []);
+
+  const visibleImages = images
+    .slice(startIndex, startIndex + 5)
+    .concat(images.slice(0, Math.max(0, startIndex + 5 - images.length)));
+
+  return (
+    <section id="product" className="flex flex-col sm:flex-row gap-6">
+      {/* Grille animée */}
+      <div className="overflow-hidden h-[500px] w-[900px] transition-all duration-1000 ease-in-out">
+        <div className="grid-layout animate-slide">
+          {visibleImages.map((img, i) => (
+            <div key={i} className={`item item-${i + 1}`}>
+              <img
+                src={img}
+                alt={`papillon-${i}`}
+                className="w-full h-full object-cover "
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Texte gardé intact */}
+      <div className="flex-1">
+        <h2 className="text-white text-[32px] font-bold">
+          Apprenez à reconnaître <br /> les papillons autour de vous.
+        </h2>
+        <p className="text-dimWhite max-w-[470px] mt-5">
+          Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
+          aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
+          placerat.
+        </p>
+      </div>
+    </section>
+  );
+};
 
 export default Billing;
