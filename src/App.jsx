@@ -13,7 +13,7 @@ import {
 import Premium from "./components/Premium";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
+  <div className="bg-primary w-full overflow-hidden sm:px-8">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
@@ -21,7 +21,7 @@ const App = () => (
     </div>
 
     <div className={`bg-primary ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
+      <div className={`${styles.boxWidth} sm:px-5`}>
         <Hero />
       </div>
     </div>

@@ -25,20 +25,25 @@ const Billing = () => {
   }, []);
 
   const visibleImages = images
-    .slice(startIndex, startIndex + 5)
-    .concat(images.slice(0, Math.max(0, startIndex + 5 - images.length)));
+    .slice(startIndex, startIndex + 3)
+    .concat(images.slice(0, Math.max(0, startIndex + 3 - images.length)));
 
   return (
     <section id="product" className="flex flex-col sm:flex-row gap-6">
       {/* Grille animée */}
-      <div className="overflow-hidden h-[500px] w-[900px] transition-all duration-1000 ease-in-out">
+      <div className="overflow-hidden h-[600px] w-[1000px] transition-all duration-1000 ease-in-out mt-7">
         <div className="grid-layout animate-slide">
           {visibleImages.map((img, i) => (
-            <div key={i} className={`item item-${i + 1}`}>
+            <div
+              key={i}
+              className={`item item-${
+                i + 1
+              } flex items-center justify-center bg-black rounded-xl overflow-hidden`}
+            >
               <img
                 src={img}
                 alt={`papillon-${i}`}
-                className="w-full h-full object-cover "
+                className="w-full h-full object-cover"
               />
             </div>
           ))}
@@ -46,9 +51,9 @@ const Billing = () => {
       </div>
 
       {/* Texte gardé intact */}
-      <div className="flex-1">
+      <div className="flex-1 mt-7">
         <h2 className="text-white text-[32px] font-bold">
-          Apprenez à reconnaître <br /> les papillons autour de vous.
+          Apprenez à reconnaître les papillons autour de vous.
         </h2>
         <p className="text-dimWhite max-w-[470px] mt-5">
           Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio

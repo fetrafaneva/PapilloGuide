@@ -4,7 +4,7 @@ const styles = {
   heading2:
     "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
   heading3:
-    "font-poppins font-semibold ss:text-[72px] text-[52px] bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 via-yellow-400 to-purple-400 relative drop-shadow-2xl ss:leading-[100.8px] leading-[75px]",
+    "font-poppins font-semibold ss:text-[62px] text-[52px] bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 via-yellow-400 to-purple-400 relative drop-shadow-2xl ss:leading-[100.8px] leading-[75px]",
 
   paragraph:
     "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",

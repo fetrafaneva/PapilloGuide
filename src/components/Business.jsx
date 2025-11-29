@@ -32,8 +32,9 @@ const Business = () => (
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Les papillons jouent un rôle essentiel dans la pollinisation et
-        l’équilibre des écosystèmes. Notre mission : faire connaître et
-        préserver ces espèces admirées à travers le monde.
+        l’équilibre des écosystèmes. <br className="sm:block hidden" /> Notre
+        mission : faire connaître et préserver ces espèces admirées à travers le
+        monde.
       </p>
     </div>
 
