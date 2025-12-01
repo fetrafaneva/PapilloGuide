@@ -31,7 +31,7 @@ const Billing = () => {
   return (
     <section id="product" className="flex flex-col sm:flex-row gap-6">
       {/* Grille animée */}
-      <div className="overflow-hidden h-[600px] w-[1000px] transition-all duration-1000 ease-in-out mt-7">
+      <div className="overflow-hidden sm:h-[600px] sm:w-[1000px] transition-all duration-1000 ease-in-out mt-7">
         <div className="grid-layout animate-slide">
           {visibleImages.map((img, i) => (
             <div
