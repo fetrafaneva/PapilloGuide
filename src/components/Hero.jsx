@@ -1,5 +1,5 @@
 import styles from "../style";
-import { discount, robot } from "../assets";
+import { robot } from "../assets";
 
 const Hero = () => {
   return (
