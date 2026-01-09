@@ -20,7 +20,7 @@ const Billing = () => {
   return (
     <section className="flex flex-col sm:flex-row gap-10 items-start">
       {/* Grande image */}
-      <div className="flex flex-col items-center w-full sm:w-[600px]">
+      <div className="flex flex-col items-center w-full sm:w-[700px]">
         <div className="w-full">
           <img
             src={activeImage}
