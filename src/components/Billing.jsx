@@ -18,7 +18,7 @@ const Billing = () => {
   const [stopScroll, setStopScroll] = useState(false);
 
   return (
-    <section className="flex flex-col sm:flex-row gap-10 items-start">
+    <section className="flex flex-col sm:flex-row gap-10 items-start sm:py-16 py-6">
       {/* Grande image */}
       <div className="flex flex-col items-center w-full sm:w-[700px]">
         <div className="w-full">
@@ -67,7 +67,8 @@ const Billing = () => {
       {/* Texte */}
       <div className="flex-1 mt-4">
         <h2 className="text-white text-[32px] font-bold">
-          Apprenez à reconnaître les papillons autour de vous.
+          Apprenez à reconnaître <br className="sm:block hidden" /> les
+          papillons autour de vous.
         </h2>
         <p className="text-dimWhite max-w-[470px] mt-5">
           Elit enim sed massa etiam. Mauris eu adipiscing ultrices amet odio
