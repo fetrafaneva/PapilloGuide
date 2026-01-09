@@ -18,8 +18,8 @@ const Billing = () => {
   return (
     <section id="product" className="flex flex-col sm:flex-row gap-6">
       {/* Zone TV */}
-      <div className="overflow-hidden sm:h-[600px] sm:w-[1000px] mt-7 relative">
-        <div className="tv-frame relative sm:h-[600px] sm:w-[1000px] overflow-hidden rounded-xl border-4 border-black bg-black">
+      <div className=" sm:h-[600px] sm:w-[1000px] mt-7 relative">
+        <div className="tv-frame relative sm:h-[600px] sm:w-[1000px] rounded-xl border-4 border-black bg-black">
           <div className="tv-scroll flex flex-col">
             {[...images, ...images].map((img, i) => (
               <img
