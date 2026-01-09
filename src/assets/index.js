@@ -37,9 +37,9 @@ import img11 from "./papillo11.jpg";
 import img12 from "./papillo12.jpg";
 import img13 from "./papillo13.jpg";
 import img14 from "./papillo14.jpg";
-import img15 from "./papillo15.png";
-import img16 from "./papillo16.png";
-import img17 from "./papillo17.png";
+import img15 from "./papillo15.jpg";
+import img16 from "./papillo16.jpg";
+import img17 from "./papillo17.jpg";
 
 export {
   airbnb,
