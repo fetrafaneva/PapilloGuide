@@ -9,7 +9,8 @@ const Billling = () => {
       {/* Texte */}
       <div className="flex-1 mt-7">
         <h2 className="text-white text-[32px] font-bold">
-          Apprenez à reconnaître les papillons autour de vous.
+          Apprecier <br className="sm:block hidden" /> la beauté de ces petites
+          êtres.
         </h2>
         <p className="text-dimWhite max-w-[470px] mt-5">
           Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
