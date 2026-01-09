@@ -25,7 +25,7 @@ const Billing = () => {
           <img
             src={activeImage}
             alt="Papillon sélectionné"
-            className="w-full h-[350px] object-cover rounded-xl border border-white/10 transition-all duration-300"
+            className="w-full h-[550px] object-cover rounded-xl border border-white/10 transition-all duration-300"
           />
         </div>
 
