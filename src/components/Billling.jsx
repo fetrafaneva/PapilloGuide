@@ -13,33 +13,42 @@ import {
 } from "../assets";
 
 const Billing = () => {
-  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+  const images = [
+    { src: img1, name: "Papillon Monarque" },
+    { src: img2, name: "Papillon Morphos Bleu" },
+    { src: img3, name: "Papillon Citron" },
+    { src: img4, name: "Papillon Paon-du-jour" },
+    { src: img5, name: "Papillon Vulcain" },
+    { src: img6, name: "Papillon Flambé" },
+    { src: img7, name: "Papillon Belle-Dame" },
+    { src: img8, name: "Papillon Azuré" },
+    { src: img9, name: "Papillon Sylvain" },
+    { src: img10, name: "Papillon Tircis" },
+  ];
+
   const [activeImage, setActiveImage] = useState(images[0]);
   const [stopScroll, setStopScroll] = useState(false);
 
   return (
-    <section className="flex flex-col sm:flex-row gap-10 items-start sm:py-16 py-6">
-      {/* Texte */}
-      <div className="flex-1 mt-4">
-        <h2 className="text-white text-[32px] font-bold">
-          Apprecier <br className="sm:block hidden" /> la beauté de ces petites
-          êtres.
-        </h2>
-        <p className="text-dimWhite max-w-[470px] mt-5">
-          Elit enim sed massa etiam. Mauris eu adipiscing ultrices amet odio
-          aenean neque. Fusce ipsum orci rhoncus aliquet porttitor integer
-          platea placerat.
-        </p>
-      </div>
-
-      {/* Grande image */}
-      <div className="flex flex-col items-center w-full sm:w-[700px]">
-        <div className="w-full">
+    <section
+      id="galerie"
+      className="flex flex-col sm:flex-row gap-10 items-start sm:py-16 py-6"
+    >
+      {/* Grande image (EN HAUT sur mobile) */}
+      <div className="order-1 sm:order-2 flex flex-col items-center w-full sm:w-[700px]">
+        <div className="w-full relative">
           <img
-            src={activeImage}
-            alt="Papillon sélectionné"
+            src={activeImage.src}
+            alt={activeImage.name}
             className="w-full h-[550px] object-cover rounded-xl border border-white/10 transition-all duration-300"
           />
+
+          {/* Nom du papillon */}
+          <div className="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md px-4 py-2 rounded-lg">
+            <p className="text-white text-lg font-semibold">
+              {activeImage.name}
+            </p>
+          </div>
         </div>
 
         {/* Miniatures en marquee */}
@@ -61,12 +70,12 @@ const Billing = () => {
               {[...images, ...images].map((img, index) => (
                 <img
                   key={index}
-                  src={img}
-                  alt={`Papillon ${index}`}
-                  onMouseEnter={() => setActiveImage(img)} // affiche l'image sur le grand cadre
+                  src={img.src}
+                  alt={img.name}
+                  onMouseEnter={() => setActiveImage(img)}
                   className={`flex-shrink-0 cursor-pointer h-24 w-24 object-cover rounded-lg border transition
                   ${
-                    activeImage === img
+                    activeImage.src === img.src
                       ? "border-blue-500 opacity-100"
                       : "border-transparent opacity-70 hover:opacity-100"
                   }`}
@@ -77,7 +86,20 @@ const Billing = () => {
         </div>
       </div>
 
-      {/* Styles pour marquee */}
+      {/* Texte (EN BAS sur mobile) */}
+      <div className="order-2 sm:order-1 flex-1 mt-4">
+        <h2 className="text-white text-[32px] font-bold">
+          Explorez le monde coloré <br className="sm:block hidden" /> des
+          papillons
+        </h2>
+        <p className="text-dimWhite max-w-[470px] mt-5">
+          Découvrez les différentes espèces de papillons qui vous entourent.
+          Observez leurs motifs uniques, leur façon de voler et les fleurs
+          qu’ils préfèrent pour mieux apprécier les merveilles de la nature.
+        </p>
+      </div>
+
+      {/* Styles marquee */}
       <style>{`
         .marquee-inner {
           display: flex;
