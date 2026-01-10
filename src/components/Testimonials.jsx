@@ -4,26 +4,26 @@ const testimonials = [
   {
     id: 1,
     name: "Donald Jackman",
-    role: "Content Creator",
+    role: "Amateur Naturalist",
     image:
       "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200",
-    text: "Everything you need to accept card payments and grow your business anywhere on the planet.",
+    text: "This platform helped me identify different butterfly species and better understand their behavior in the wild.",
   },
   {
     id: 2,
     name: "Richard Nelson",
-    role: "Instagram Influencer",
+    role: "Nature Photographer",
     image:
       "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200",
-    text: "Everything you need to accept card payments and grow your business anywhere on the planet.",
+    text: "An amazing source of inspiration for my explorations. Every butterfly discovery feels like a unique visual adventure.",
   },
   {
     id: 3,
     name: "James Washington",
-    role: "Marketing Manager",
+    role: "Biodiversity Enthusiast",
     image:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200",
-    text: "Everything you need to accept card payments and grow your business anywhere on the planet.",
+    text: "This site allowed me to deepen my knowledge of butterflies and share my discoveries with a passionate community.",
   },
 ];
 
@@ -54,8 +54,8 @@ const Testimonials = () => (
         Ce que disent <br className="sm:block hidden" /> les passionnés
       </h2>
       <p className={`${styles.paragraph} max-w-[450px] md:mt-0 mt-6`}>
-        Everything you need to accept card payments and grow your business
-        anywhere on the planet.
+        Discover the beauty and diversity of butterflies through observations,
+        photos, and stories shared by nature lovers around the world.
       </p>
     </div>
 
@@ -85,9 +85,6 @@ const Testimonials = () => (
           <p className="text-dimWhite text-center mt-6 text-sm leading-relaxed">
             “{item.text}”
           </p>
-
-          {/* Stars */}
-          <Stars />
         </div>
       ))}
     </div>
