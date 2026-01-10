@@ -89,13 +89,13 @@ const Billing = () => {
       {/* Texte (EN BAS sur mobile) */}
       <div className="order-2 sm:order-1 flex-1 mt-4">
         <h2 className="text-white text-[32px] font-bold">
-          Apprenez à reconnaître <br className="sm:block hidden" /> les
-          papillons autour de vous.
+          Explorez le monde coloré <br className="sm:block hidden" /> des
+          papillons
         </h2>
         <p className="text-dimWhite max-w-[470px] mt-5">
-          Elit enim sed massa etiam. Mauris eu adipiscing ultrices amet odio
-          aenean neque. Fusce ipsum orci rhoncus aliquet porttitor integer
-          platea placerat.
+          Découvrez les différentes espèces de papillons qui vous entourent.
+          Observez leurs motifs uniques, leur façon de voler et les fleurs
+          qu’ils préfèrent pour mieux apprécier les merveilles de la nature.
         </p>
       </div>
 

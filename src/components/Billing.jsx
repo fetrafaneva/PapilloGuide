@@ -93,9 +93,10 @@ const Billing = () => {
           papillons autour de vous.
         </h2>
         <p className="text-dimWhite max-w-[470px] mt-5">
-          Elit enim sed massa etiam. Mauris eu adipiscing ultrices amet odio
-          aenean neque. Fusce ipsum orci rhoncus aliquet porttitor integer
-          platea placerat.
+          Découvrez la beauté des papillons locaux et apprenez à identifier les
+          différentes espèces dans leur habitat naturel. Observez leurs
+          couleurs, motifs et comportements pour approfondir votre connaissance
+          de ces insectes fascinants.
         </p>
       </div>
 
