@@ -58,6 +58,39 @@ const Testimonials = () => (
         anywhere on the planet.
       </p>
     </div>
+
+    {/* Cards */}
+    <div className="flex flex-wrap justify-center gap-10 relative z-[1]">
+      {testimonials.map((item) => (
+        <div
+          key={item.id}
+          className="w-[300px] pt-16 pb-8 px-6 rounded-2xl
+          bg-black-gradient border border-white/10
+          hover:border-blue-500/50 transition-all duration-300"
+        >
+          {/* Avatar */}
+          <div className="flex flex-col items-center relative">
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-24 h-24 rounded-full object-cover absolute -top-20 border-4 border-blue-500"
+            />
+            <div className="mt-10 text-center">
+              <h3 className="text-white text-lg font-semibold">{item.name}</h3>
+              <p className="text-dimWhite text-sm">{item.role}</p>
+            </div>
+          </div>
+
+          {/* Text */}
+          <p className="text-dimWhite text-center mt-6 text-sm leading-relaxed">
+            “{item.text}”
+          </p>
+
+          {/* Stars */}
+          <Stars />
+        </div>
+      ))}
+    </div>
   </section>
 );
 
