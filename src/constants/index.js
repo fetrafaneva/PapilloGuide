@@ -21,7 +21,7 @@ export const navLinks = [
     title: "Espèces",
   },
   {
-    id: "product",
+    id: "galerie",
     title: "Galerie",
   },
   {
