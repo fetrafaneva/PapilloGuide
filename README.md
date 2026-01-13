@@ -17,19 +17,19 @@ PapilloGuide is an interactive and visually appealing website dedicated to butte
 
 Here’s what you can explore with PapilloGuide:
 
-- **Responsive Design: Works seamlessly on desktop, tablet, and mobile devices.
+- Responsive Design: Works seamlessly on desktop, tablet, and mobile devices.
 
-- **Interactive Sections: Smooth animations and hover effects to engage users.
+- Interactive Sections: Smooth animations and hover effects to engage users.
 
-- **Navigation Menu: Easy-to-use menu to move between sections.
+- Navigation Menu: Easy-to-use menu to move between sections.
 
-- **Fast Performance: Optimized for speed and smooth browsing.
+- Fast Performance: Optimized for speed and smooth browsing.
 
-- **Image Upload**: Upload and manage profile images using ImageKit for fast and optimized image handling.
+- Image Upload**: Upload and manage profile images using ImageKit for fast and optimized image handling.
 
-- **User Authentication**: Securely register and log in to access and manage your resumes.
+- User Authentication**: Securely register and log in to access and manage your resumes.
 
-- **Save & Manage Resumes**: Store your resumes in the database and access them anytime.
+- Save & Manage Resumes**: Store your resumes in the database and access them anytime.
 
 ## 👩🏽‍🍳 The Process
 
@@ -45,15 +45,15 @@ During this project, I strengthened my skills in front-end development and user 
 
 ### React & Component Architecture:
 
-- **Reusable Components: Learned how to build reusable cards and sections for species, guides, and tips.
+- Reusable Components: Learned how to build reusable cards and sections for species, guides, and tips.
 
-- **State Management: Managed dynamic content like galleries, filters, and interactive lists.
+- State Management: Managed dynamic content like galleries, filters, and interactive lists.
 
 ### Responsive Design & TailwindCSS:
 
-- **Built fully responsive layouts for desktop, tablet, and mobile.
+- Built fully responsive layouts for desktop, tablet, and mobile.
 
-- **Learned how to create visually appealing UI elements while keeping performance in mind.
+- Learned how to create visually appealing UI elements while keeping performance in mind.
 
 ### 📈 Overall Growth:
 
