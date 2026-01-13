@@ -55,3 +55,28 @@ During this project, I strengthened my skills in front-end development and user 
 
 - **Learned how to create visually appealing UI elements while keeping performance in mind.
 
+### 📈 Overall Growth:
+
+This project helped me combine education, design, and interactive development. It improved my ability to create visually appealing, responsive websites while showcasing content in a user-friendly way.
+
+## How can it be improved?
+
+- Add a backend API to dynamically manage butterfly data
+- Integrate a CMS for easier content updates
+- Implement multilingual support for global audiences
+- Add animations or interactive maps of butterfly habitats
+
+## Running the Project
+
+To run the project in your local environment, follow these steps:
+
+1. Clone the repo `git clone https://github.com/fetrafaneva/PapilloGuide.git`
+2. Install dependencies:
+   ### Frontend:
+       `cd PapilloGuide`
+       `npm install`
+       `npm run dev`
+
+## 🍿 Video
+
+https://github.com/
