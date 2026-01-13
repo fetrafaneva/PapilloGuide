@@ -1,4 +1,4 @@
-# MERN_AIResume
+# PapilloGuide 🦋
 
 PapilloGuide is an interactive and visually appealing website dedicated to butterflies, offering guides, facts, and showcases about different species. The website is designed to educate users while providing a smooth browsing experience with responsive and engaging design.
 
