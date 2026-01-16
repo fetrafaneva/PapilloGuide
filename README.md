@@ -78,4 +78,5 @@ To run the project in your local environment, follow these steps:
 
 ## 🍿 Video
 
-https://github.com/fetrafaneva/PapilloGuide/blob/main/src/assets/Cosplay.mp4
+[screen-capture (2).webm](https://github.com/user-attachments/assets/205743bf-3322-4e40-a595-5a34251c1815)
+
