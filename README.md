@@ -78,4 +78,4 @@ To run the project in your local environment, follow these steps:
 
 ## 🍿 Video
 
-https://github.com/fetrafaneva/PapilloGuide/blob/main/src/assets/demo.webm
+https://github.com/fetrafaneva/PapilloGuide/blob/main/src/assets/Cosplay.mp4
