@@ -8,7 +8,6 @@ PapilloGuide is an interactive and visually appealing website dedicated to butte
 
 - `React.js`
 - `JavaScript`
-- `TypeScript`
 - `TailwindCSS`
 - `CSS`
 - `HTML`
