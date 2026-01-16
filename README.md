@@ -78,5 +78,7 @@ To run the project in your local environment, follow these steps:
 
 ## 🍿 Video
 
-[web.webm](https://github.com/user-attachments/assets/4ec74ae5-fc6c-4c04-a785-c7bf549aa77b)
+https://github.com/user-attachments/assets/d98fb1c3-556d-47b9-a939-4c0c5616b24c
+
+
 
